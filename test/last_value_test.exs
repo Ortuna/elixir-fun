@@ -11,4 +11,8 @@ defmodule LastValueTest do
   test "It is nil when 'example'" do
     assert LastValue.last("example") == nil
   end
+
+  test "handle blank string" do
+    assert LastValue.last("") == nil
+  end
 end

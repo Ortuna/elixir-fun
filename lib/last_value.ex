@@ -1,4 +1,5 @@
 defmodule LastValue do
+  def last(""), do: nil
   def last(string) when is_bitstring(string) do
     handle_parts String.split(string, ".")
   end
